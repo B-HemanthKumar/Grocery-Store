@@ -1,0 +1,12 @@
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    /* height: 50px; */
+    width: 100%;
+    background-color: green;
+}
+
+.title{
+    color: blanchedalmond;
+    padding: 15px;
+}
