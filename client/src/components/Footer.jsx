@@ -7,6 +7,7 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import LocalPhoneTwoToneIcon from '@mui/icons-material/LocalPhoneTwoTone';
 import EmailTwoToneIcon from '@mui/icons-material/EmailTwoTone';
 import PermIdentityTwoToneIcon from '@mui/icons-material/PermIdentityTwoTone';
+import TopSlide from './TopSlide';
 
 const Container = styled.div`
     flex: 1;
@@ -50,7 +51,7 @@ const SocialIcons = styled.div`
 
     &:hover {
       background-color: teal;
-      transform: scale(2);
+      transform: scale(1.5);
 `;
 
 const Center = styled.div`
@@ -120,30 +121,31 @@ const Footer = () => {
         <Center>
             <Title> Useful Links  </Title>
             <List>
-                <ListItem>Home.</ListItem>
-                <ListItem>Cart.</ListItem>
-                <ListItem>Wishlist.</ListItem>
-                <ListItem>My Account.</ListItem>
-                <ListItem>Products.</ListItem
-                ><ListItem>Order Tracking.</ListItem>
-                <ListItem>Terms & Conditions.</ListItem>
+                <ListItem>- Home.</ListItem>
+                <ListItem>- Cart.</ListItem>
+                <ListItem>- Wishlist.</ListItem>
+                <ListItem>- My Account.</ListItem>
+                <ListItem>- Products.</ListItem>
+                {/* <ListItem>- Order Tracking.</ListItem> */}
+                <ListItem>- Terms & Conditions.</ListItem>
             </List>
         </Center>
         <Right>
             <Title> Contact </Title>
             <ContactItem>
-            <PermIdentityTwoToneIcon/>
+            <PermIdentityTwoToneIcon style={{marginRight:"10px"}} />
                     VINOD KUMAR.
             </ContactItem>
             <ContactItem>
-                <LocalPhoneTwoToneIcon/>
+                <LocalPhoneTwoToneIcon style={{marginRight:"10px"}} />
                     +91xxxxxxxxxx.
             </ContactItem>
             <ContactItem>
-                <EmailTwoToneIcon/>
+                <EmailTwoToneIcon style={{marginRight:"10px"}} />
                     Email@gmail.com
             </ContactItem>
             <Payment/> 
+            <TopSlide/>
         </Right>
     </Container>
     </>

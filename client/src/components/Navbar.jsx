@@ -6,12 +6,18 @@ import ShoppingCartTwoToneIcon from '@mui/icons-material/ShoppingCartTwoTone';
 
 
 const Container = styled.div`
-  height: 60px; 
+  height: 75px; 
   cursor: pointer;
+  // position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #EEEEEE;
+  z-index: 2;
+
 `;
 
 const Wrapper = styled.div`
-  padding: 10px 20px;   
+  padding: 0px 20px;   
   display: flex;
   justify-content: space-between;
 `;
@@ -65,7 +71,7 @@ const Search = styled.div`
 
 const Logo = styled.h1`
   font-weight: bold;
- 
+  margin-top: 20px;
   
 `;
 
@@ -91,14 +97,11 @@ const Button = styled.button`
   justify-content: center;
   margin: 10px;
   transition: all 0.5s ease;
-
+  
   &:hover {
-    background-color: #e9f5f5;
+     background-color: #e9f5f5;
     transform: scale(1.1);
-
-  }
 `;
-
 
 const Cart = styled.div`
 font-size: 14px;
@@ -108,7 +111,7 @@ transition: all 0.5s ease;
 &:hover {
   background-color: #e9f5f5;
   transform: scale(1.1);
-
+  color: black;
 }
 `;
 

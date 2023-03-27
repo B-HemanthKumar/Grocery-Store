@@ -7,18 +7,32 @@ const Container = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-  
+    cursor: pointer; 
 `;
+
+const Title = styled.h1`
+  margin: 20px 0px;
+  margin-left: 85vh;
+  margin-right: 85vh;
+  border-bottom: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  `;
 
 const Products = () => {
   return (
-    <Container>
+    <>
+      <Title> Products : 
+      </Title>
+        
+      <Container>
+        
         {AllProducts.map(item=>(
           <Product item={item} key={item.image} />
         ))}
-
-    </Container>
-       
+      </Container>
+    </>   
   )
 }
 
